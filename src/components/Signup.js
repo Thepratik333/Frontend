@@ -46,7 +46,8 @@ const Signup = () => {
     }, [])
 
     return (
-        <div className="login-container">
+        <div className='login-container'>
+        <div className="login-box">
             <form className="login-form" onSubmit={handleSubmit}>
                 <h1>Welcome</h1>
                 <p>Please Signup to your account</p>
@@ -67,6 +68,7 @@ const Signup = () => {
                 <p>You have an account? <Link to="/Login">Login</Link></p>
             </div>
             </form>
+        </div>
         </div>
     )
 }

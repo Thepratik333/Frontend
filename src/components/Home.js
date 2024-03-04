@@ -225,7 +225,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div id="page3" style={{padding: "30px", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                    <div className="container d-flex justify-content-center align-items-center">
+                    <div className="contact container">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
                             <g id="Image">
                                 <g id="g14">
