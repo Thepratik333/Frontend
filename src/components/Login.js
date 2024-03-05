@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect, } from 'react'
 import "./login.css";
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { LoginContext } from '../context/notes/loginContext';
 import info from '../img/IMG-20240117-WA0108.jpg'
 // import Api from './weatherApp/Api';
@@ -8,7 +8,6 @@ import info from '../img/IMG-20240117-WA0108.jpg'
 const Login = () => {
     const [Credentials, setCredentials] = useState({ email: "", password: "" })
     const context = useContext(LoginContext);
-    const location = useLocation()
 
     let navigate = useNavigate()
     const handleSubmit = async (e) => {
@@ -36,7 +35,6 @@ const Login = () => {
         setCredentials({ ...Credentials, [e.target.name]: e.target.value })
     }
 
-    let isTodo = location.pathname.startsWith('/Login');
     const mediaQuery = window.matchMedia('(max-width: 430px)');
 
     useEffect(() => {

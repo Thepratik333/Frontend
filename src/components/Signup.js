@@ -43,7 +43,7 @@ const Signup = () => {
             document.body.style.backgroundImage = "url("+info+")"; 
             document.body.style.backgroundPosition = "bottom";
         }
-    }, [])
+    }, [Signup])
 
     return (
         <div className='login-container'>
