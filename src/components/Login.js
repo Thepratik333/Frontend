@@ -12,7 +12,7 @@ const Login = () => {
     let navigate = useNavigate()
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch("https://backend-4f7l.onrender.com/api/auth/login", {
+        const response = await fetch("https://backend-4f7l.onrender.com/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
