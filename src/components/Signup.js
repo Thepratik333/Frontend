@@ -15,7 +15,7 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch("https://backend-4f7l.onrender.com/auth/getuser", {
+        const response = await fetch("https://backend-4f7l.onrender.com:10000/api/auth/getuser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
